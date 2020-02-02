@@ -1,0 +1,187 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+ <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<title>Alice Moretti | Webdeveloper personal portfolio</title>
+ <style>
+ body {
+  margin:0;
+}
+
+nav {
+  background-color:white;
+  width: 100%;
+  height: 100px;
+  margin:0;
+  position:fixed;
+  top: 0;
+
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  justify-content:flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  padding: 40px;
+  display: block;
+  color:black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 650px){
+  ul{
+  display: flex;
+  flex-direction: column;
+  }
+}
+
+@media (max-width: 650px){
+  #navbar{
+  height: 150px;
+}
+}
+
+@media (max-width: 650px){
+  li a{
+    padding: 10px;
+  }
+}
+
+#welcome-section{
+  text-align:center;
+  height: 100vh;
+  width: 100%;
+  background-color: pink;
+  background-image: url(https://cdn.pixabay.com/photo/2015/03/13/12/03/lego-671593_960_720.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#welcome{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+
+}
+p{
+ font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+}
+
+#projects h1{
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+  text-align:center;
+  margin-top: 80px;
+}
+
+.project-image{
+  width: 450px;
+  height: 250px;
+  border: solid #c3afed 10px;
+  display: inline-block;
+  margin: 30px;
+}
+
+#projects{
+  text-align: center;
+}
+
+#contact-info{
+  background-color: #dfe0dc;
+  padding: 20px;
+  text-align:center;
+}
+
+@media (max-width: 650px){
+  li {
+  margin:auto;
+}
+}
+
+@media (max-width: 650px){
+  ul{
+  display: flex;
+  flex-direction: column;
+  }
+}
+
+@media (max-width: 650px){
+  #contact-info h1 {
+  font-size: 7vw
+}
+}
+
+@media (max-width: 650px){
+  #contact-info p {
+  font-size: 4vw
+}
+}
+ </style>
+
+ </head>
+
+
+ <section id="welcome-section">
+   <div id="welcome">
+   <h1>Hello There!</h1>
+   <p>I am Alice, a web developer.</p>
+   </div>
+   </section>
+
+ <nav id="navbar">
+ <ul>
+   <li><a href="#welcome-section">About</a></li>
+   <li><a href="#projects">Work</a></li>
+   <li><a href="#contact">Contact</a></li>
+ </ul>
+</nav>
+
+ <section id="projects">
+   <h1>Below some of my projects:</h1>
+   <div id="projects">
+     <a href="https://codepen.io/Alicinetto/pen/LYEOyvX" class="project-tile">
+       <img class="project-image" src="https://user-images.githubusercontent.com/57760930/73126595-5c696000-3fbd-11ea-8a17-a12e1124e961.png" alt="project"/></a>
+       <a href="https://codepen.io/Alicinetto/full/dyPZRwY" class="project-tile">
+       <img class="project-image" src="https://user-images.githubusercontent.com/57760930/73126635-f8936700-3fbd-11ea-970a-25b81caeadd4.png" alt="project"/></a>
+          <a href="https://codepen.io/Alicinetto/full/PowOvxM" class="project-tile">
+       <img class="project-image" src="https://user-images.githubusercontent.com/57760930/73126677-5f188500-3fbe-11ea-98e7-601c44f23854.png" alt="project"/></a>
+             <a href="https://codepen.io/Alicinetto/full/povaxMj" class="project-tile">
+       <img class="project-image" src="https://user-images.githubusercontent.com/57760930/73126723-b880b400-3fbe-11ea-95e3-acb2fdda3980.png" alt="project"/></a>
+   </div>
+ </section>
+
+<section id="contact">
+<div id="contact-info">
+ <h1>Let's work together...</h1>
+ <p>I wanna hear about your project!</p>
+ <p><a href="https://www.freecodecamp.org/fccfad92c79" id="profile-link" title="alice FCC account" target="_blank">FCC profile</p>
+</div>
+</section>
+
+
+</html>

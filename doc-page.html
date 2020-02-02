@@ -1,0 +1,210 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS technical documentation page</title>
+<style>
+#main-doc{
+
+}
+
+.main-section{}
+
+#navbar{
+  background-color: #f5c149;
+  width: 280px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+nav>header{
+  font-family: arial;
+  font-size: 30px;
+  border: 1px solid black;
+  border-bottom: none;
+  padding: 30px;
+}
+
+#navbar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+  position: fixed;
+  overflow: auto;
+  background-color: #f5c149;
+  width: 278px;
+}
+
+li a{
+  display: block;
+  padding: 30px;
+  font-family: arial;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+#navbar a:hover{
+  background-color: #e38c1b
+}
+
+#navbar li{
+  border-bottom: 1px solid black;
+}
+
+#navbar li:last-child {
+  border-bottom: none;
+}
+
+#main-doc{
+  margin-left: 280px;
+  padding: 20px;
+  margin-bottom: 110px;
+  font-family: arial;
+  position: absolute;
+}
+
+img{
+  width: 400px;
+}
+
+code{
+  display:block;
+  margin: 15px;
+  background-color: #f7f7f7;
+  line-height: 3;
+  margin-left: 20px;
+
+}
+
+section>header{
+  font-family: arial;
+  font-size: 30px;
+  text-decoration: underline #e38c1b;
+}
+
+section li{
+  padding: 10px;
+  margin-left: 40px;
+}
+@media (max-width: 715px){
+  .main-section{
+    width: 350px;
+  }
+
+  img{
+  width: 300px;
+}
+}
+@media (max-width: 650px){
+  #main-doc{
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 850px;
+  }
+  #navbar {
+    width: 100%;
+   position: static;
+  }
+  #navbar ul{
+    width: 100%;
+    position: static;
+  }
+
+  section>header{
+    font-family: arial;
+  font-size: 20px;
+  text-decoration: underline #e38c1b;
+  }
+
+
+}
+
+
+</style>
+</head>
+<nav id="navbar">
+  <header>CSS language</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li>
+    <li><a class="nav-link" href="#CSS_Selectors">CSS Selectors</a></li>
+    <li><a class="nav-link" href="#How_To_Add_CSS">How To Add CSS</a></li>
+    <li><a class="nav-link" href="#CSS_Colors">CSS Colors</a></li>
+    </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+     <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+
+      <ul>
+        <li>CSS stands for Cascading Style Sheets</li>
+        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+        <li>External stylesheets are stored in CSS files</li>
+      </ul>
+      <p>CSS Saves a Lot of Work!
+      </p>
+      <p>Below an example of CSS code:
+      <code>p {font-size:10px; text-align:left;}</code></p>
+    </article>
+  </section>
+   <section class="main-section" id="CSS_Syntax">
+     <header>CSS Syntax</header>
+     <p>A CSS rule-set consists of a selector and a declaration block.</p>
+     <img src="https://www.w3schools.com/css/selector.gif" alt="Css-syntax">
+
+     <p>The selector points to the HTML element you want to style.</p>
+
+<p>The declaration block contains one or more declarations separated by semicolons.</p>
+
+<p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+
+<p>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</p>
+     <p>In this example all elements will be center-aligned, with a red text color:
+       <code>p {
+  color: red;
+  text-align: center;
+}</code>
+  </section>
+   <section class="main-section" id="CSS_Selectors">
+     <header>CSS Selectors</header>
+     <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+     <p>We can divide CSS selectors into five categories:</p>
+     <ul>
+       <li>Simple selectors (select elements based on name, id, class)</li>
+       <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+       <li>Pseudo-class selectors (select elements based on a certain state)</li>
+       <li>Pseudo-elements selectors (select and style a part of an element)</li>
+       <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+     </ul>
+     <p>In this example only elements with class="center" will be center-aligned:<code>p.center {
+  text-align: center;
+  color: red;
+       }</code></p>
+  </section>
+   <section class="main-section" id="How_To_Add_CSS">
+     <header>How To Add CSS</header>
+     <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+     <p>There are three ways of inserting a style sheet:</p>
+     <ul>
+       <li>External CSS</li>
+       <li>Internal CSS</li>
+       <li>Inline CSS</li>
+       </ul>
+       <p>Here is how you link to an external style sheet: <code>
+         link rel="stylesheet" type="text/css" href="mystyle.css"</code>
+  </section>
+   <section class="main-section" id="CSS_Colors">
+     <header>CSS Colors</header>
+     <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+     <p> Below an example of inline CSS styling the h1<code>h1 style="border:2px solid Tomato;">Hello World</code></p>
+  </section>
+
+</main>
+</html>

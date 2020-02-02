@@ -1,0 +1,234 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazing volleyball shoes</title>
+<style>
+*{
+  margin: 0;
+}
+
+body{
+  font-family: arial;
+  margin:0;
+}
+
+#header{
+
+}
+#nav-bar{
+  margin: 0;
+  padding: 0;
+  background-color: #feda16;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+  #header-img{
+  width: 100px;
+  position: absolute;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li a{
+  display: block;
+  padding: 30px;
+  text-decoration: none;
+  color: black;
+  font-family: arial;
+  font-size: 20px;
+  float: right;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.hero-image{
+  background-image: url("https://www.cev.eu/Upload/Photo/RUSICH/20190721/202759__DSC0819.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+
+}
+
+.form{
+  text-align: center;
+  font-family: arial;
+  padding: 80px;
+}
+
+h2 {
+  font-size: 40px;
+  color: white;
+  margin-top: 100px;
+}
+
+#email{
+  padding: 10px;
+  width: 300px;
+}
+
+
+#submit{
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #feda16;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: arial;
+}
+
+#features{
+ text-align: left;
+  font-family: arial;
+  margin-top: 80px;
+  margin-left: 450px;
+}
+
+h1{
+  text-decoration: underline;
+}
+
+#how-it-works{
+  margin-top: 80px;
+  text-align: center;
+}
+#video{
+}
+
+#pricing{
+  text-align: center;
+}
+
+.price{
+  border: 4px solid #feda16;
+  width: 400px;
+  display: inline-block;
+  padding: 20px;
+  margin: 80px
+}
+
+.amount{
+  font-weight: 700;
+  font-size: 20px
+}
+
+@media (max-width: 650px){
+  li {
+  margin:auto;
+}
+}
+@media (max-width: 650px){
+  li a{
+    padding: 10px;
+  }
+}
+
+@media (max-width: 650px){
+  ul{
+  display: flex;
+  flex-direction: column;
+  }
+}
+
+@media (max-width: 650px){
+  #nav-bar{
+  height: 150px;
+}
+}
+
+@media (max-width: 650px){
+  .hero-image{
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 1200px){
+  #features{
+    text-align: left;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 650px){
+  #video{
+    width: 450px;
+  }
+}
+
+@media (max-width: 650px){
+  .price{
+  width: 300px;
+  display: inline-block;
+  padding: 10px;
+  margin: 60px
+  }
+}
+</style>
+</head>
+
+  <header id="header">
+
+
+      <nav id="nav-bar">
+
+        <img id="header-img" src="https://media.gettyimages.com/vectors/volleyball-vector-icon-vector-id1147751138?s=2048x2048" alt="volleyball shoes logo"/>
+
+    <ul>
+      <li><a href="#pricing" class="nav-link">Pricing</a></li>
+      <li><a href="#how-it-works" class="nav-link">How it works</a></li>
+      <li><a href="#features" class="nav-link">Features</a></li>
+    </ul>
+      </nav>
+  </header>
+
+<div class="hero-image">
+<div class="form">
+    <h2>Amazing volleyball shoes</h2>
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+  <input type="email" placeholder="Enter your email here" id="email" name="email">
+  <input type="submit"value="Get your pair now!"id="submit">
+</form>
+  </div>
+</div>
+
+<body>
+<section id="features">
+  <h1>Jump higher</h1>
+  <p>The super foam contained in the shoes sole allows you to jump higher.</p>
+  <h1>Be safe</h1>
+  <p>The high ankle design protects you from injury on the field.</p>
+  <h1>Move faster</h1>
+  <p>Change your position fast thanks to the revolutionary rubber under your sole.</p>
+  </section>
+
+<section id="how-it-works">
+  <iframe id="video" width="600" height="500" src="https://www.youtube.com/embed/9EGOHut_uy0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+  </section>
+
+  <section id="pricing">
+<div class="price">
+  <h1>Basic shoes</h1>
+  <p>Designed for those who play in a hobby team.</p>
+  <p class="amount">100€</p>
+    </div>
+    <div class="price">
+  <h1>Pro shoes</h1>
+  <p>Designed for those who play in a professional team.</p>
+      <p class="amount">150€</p>
+    </div>
+</section>
+
+</body>
+</html>

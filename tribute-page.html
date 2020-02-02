@@ -1,0 +1,173 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=BioRhyme|Space+Mono" rel="stylesheet">
+  <title>Italo Calvino's amazing biography</title>
+  <style>
+  #main {
+  display: grid;
+  background-color: #ffffff;
+  width: 100%;
+  margin: auto;
+  max-width: 100%;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'BioRhyme', serif;
+  padding-left:10px;
+  padding-right:10px;
+}
+.initial-quote {text-align: center;
+    font-family: 'Space Mono', sans-serif;
+    font-size: 18px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+
+h5 {text-align: center;
+    font-family: 'Space Mono', sans-serif;
+    font-size: 15px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+#title {
+  color: rgb(133, 169, 169);
+  font-size: 50px;
+  }
+
+#title-life {
+  color: rgb(133, 169, 169);
+  font-size: 50px;
+  }
+
+#img-div {
+  display: grid;
+  background-color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+  .img-border {
+  border-color: #E0D1BC;
+  border-width: 15px;
+  border-style: solid;
+
+}
+
+#image {
+   display: block;
+   height: auto;
+   margin: auto;
+   max-width: 100%;
+   position: relative;
+}
+
+#img-caption {
+  font-family: 'Space Mono', sans-serif;
+  font-size: 10px;
+  text-align: center;
+
+}
+
+#tribute-info{
+  position:relative;
+  width: 80%;
+  left: 10%;
+  font-family: 'Space Mono', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  padding-bottom:40px;
+
+}
+
+li{
+  margin-top: 40px;
+
+}
+
+#tribute-link {
+  color: rgb(133, 169, 169);
+
+}
+
+ul {
+  width: 70vw;
+
+}
+
+#quote-background {
+  background-color: #85A9A9;
+  height:15vw;
+  padding-bottom: 6vw;
+}
+
+h4 {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (max-width: 5000px) {
+  h4 {font-size: 4vw;
+
+  }
+}
+  </style
+
+</head>
+
+<body>
+
+<div id="main">
+  <h1 id="title">Italo Calvino</h1>
+
+  <q class="initial-quote">The ideal place for me is the one in which it is most natural to live as a foreigner</q>
+
+  <div id="img-div">
+    <img id="image" class="img-border" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Italo-Calvino.jpg/320px-Italo-Calvino.jpg" alt="Italo Calvino">
+    <h5 id="img-caption">Italo Calvino, one of the most important Italian fiction writers of the 20th century.</h5>
+  </div>
+
+  <h1 id="title-life">Life</h1>
+
+  <div id="tribute-info">
+    <ul>
+      <li>Italo Calvino was born in Santiago de las Vegas, a suburb of Havana, Cuba, in 1923.</li>
+
+      <li>In 1925, the family returned to Italy and settled permanently in Sanremo on the Ligurian coast. The vast forests and luxuriant fauna omnipresent in Calvino's early fiction such as The Baron in the Trees derives from this "legacy".</li>
+
+      <li>In 1941, Calvino enrolled at the University of Turin, choosing the Agriculture Faculty. Concealing his literary ambitions to please his family, he passed four exams in his first year while reading anti-Fascist works by Elio Vittorini, Eugenio Montale,
+        Cesare Pavese, Johan Huizinga, and Pisacane, and works by Max Planck, Werner Heisenberg, and Albert Einstein on physics.</li>
+
+      <li>Calvino transferred to the University of Florence in 1943 and reluctantly passed three more exams in agriculture. By the end of the year, the Germans had succeeded in occupying Liguria and setting up Benito Mussolini's puppet Republic of Salò in
+        northern Italy. Now twenty years old, Calvino refused military service and went into hiding.</li>
+
+      <li>Calvino settled in Turin in 1945, after a long hesitation over living there or in Milan.</li>
+
+      <li>In 1947, he graduated with a Master's thesis on Joseph Conrad, wrote short stories in his spare time, and landed a job in the publicity department at the Einaudi publishing house run by Giulio Einaudi.</li>
+
+      <li>His first novel, Il sentiero dei nidi di ragno (The Path to the Nest of Spiders) written with valuable editorial advice from Pavese, won the Premio Riccione on publication in 1947.</li>
+
+    </ul>
+
+  </div>
+
+
+<div id="quote-background">
+
+  <!-- used media query here, whenever the screensize is smaller than 500px width then the h4 font size changes from 30to 20px-->
+  <h4><q>One reads alone, even in another's presence.</q></h4>
+</div>
+
+  <h5>If you have time, you should read more about this great writer on his <a href ="https://en.wikipedia.org/wiki/Italo_Calvino"title="Italo Calvino Wikipedia page" target="_blank"id="tribute-link"> Wikipedia entry.</a> </h5>
+</div>
+
+</body>
+
+</html>

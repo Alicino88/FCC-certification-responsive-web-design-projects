@@ -1,0 +1,176 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway" rel="stylesheet">
+  <title>Responsive web form</title>
+  <style>
+  .flex-outer li, .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.flex-outer > li > label,
+.flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+.container {
+  width: 70%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.flex-outer li button {
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background: #F5A2A2;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  font-family: Raleway;
+  font-size: 15px;
+}
+button[type=submit]:hover {
+  background-color: #805841;
+}
+.flex-inner {
+  justify-content: flex-start;
+}
+body {
+  font-family: Raleway;
+  background: #69D2E7;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer > li {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+  border: none;
+}
+
+::placeholder{
+  font-family: raleway;
+  font-size: 13px;
+}
+
+#title{
+  font-family: Raleway;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#description{
+  font-family: Raleway;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 50px;
+  font-size:20px;
+}
+</style>
+</head>
+
+<body>
+  <h1 id="title">Amazing form</h1>
+  <p id="description">Let us know your favourite dessert!</p>
+<div class="container">
+
+        <form id="survey-form">
+        <ul class="flex-outer">
+            <li>
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name here" required>
+
+            </li>
+            <li>
+                    <label for="name"id="email-label">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email here" required>
+            </li>
+            <li>
+                    <label for="number"id="number-label">Age</label>
+                    <input type="number" id="number" placeholder="Enter your age here" min="15" max="90">
+            </li>
+            <li>
+                    <label for="country">Select your city</label>
+                    <select id="dropdown">
+                            <option value>Select your city</option>
+                            <option value="Helsinki">Helsinki</option>
+                            <option value="Tampere">Tampere</option>
+                            <option value="Turku">Turku</option>
+                            </select>
+            </li>
+            <li>
+                    <label for="message">What do you like the most about our restaurant?</label>
+                    <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+            </li>
+            <li>
+                <p>Your favourite dessert</p>
+                <ul class="flex-inner">
+                              <li>
+                                <input type="checkbox" id="tiramisu" value="tiramisu">
+                                <label for="tiramisu">Tiramisu</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="ice-cream"value="ice-cream">
+                                <label for="ice-cream">Ice-cream</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="creme-brulee"value="creme-brulee">
+                                <label for="creme-brulee">Creme-brulee</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="pudding"value="pudding">
+                                <label for="pudding">Pudding</label>
+                             </li>
+                </ul>
+            </li>
+            <li>
+                <p>Your favourite flavour</p>
+                <ul class="flex-inner">
+                        <li>
+                                <input type="radio"id="chocolate"name="flavour"value="chocolate">
+                                <label for="chocolate">Chocolate</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="vanilla"name="flavour"value="vanilla">
+                                <label for="vanilla">Vanilla</label>
+                              </li>
+
+
+                </ul>
+            </li>
+            <li>
+                <button type="submit"id="submit">Submit</button>
+            </li>
+
+        </ul>
+        </form>
+</div>
+</body>
+</html>
